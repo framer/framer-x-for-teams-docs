@@ -5,7 +5,7 @@ title: "Colors"
 tags: ["components"]
 ---
 
-The Loupe Colors package includes a set of Shared Colors. Click here to get a more detailed description of how and when to use each color.
+The Loupe Colors package includes a set of Shared Colors. Visit the homepage to get a more detailed description of how and when to use each color.
 
 | Color                 | Code      |
 | :-------------------- | :-------- |

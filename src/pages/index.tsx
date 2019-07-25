@@ -52,7 +52,7 @@ export const IndexPage = (props: any) => {
       <ul>
         <li>Default / Primary Variant</li>
         <li>Secondary Variant</li>
-        <li>Interaction State (Hover or Click)</li>
+        <li>Interaction State (Hover / Click / Drag)</li>
       </ul>
 
       <p>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 
 export const Logo = () => {
   return (
@@ -15,10 +16,36 @@ export const Logo = () => {
         <clipPath id="b">
           <use xlinkHref="#a" />
         </clipPath>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+          <motion.stop
+            stopColor="#0055FF"
+            animate={{
+              stopColor: [
+                "#0055FF",
+                "#FFF9DA",
+                "#E7FFF7",
+                "#FFC6A8",
+                "#FF7744",
+                "#D4504C",
+                "#000000",
+                "#F3F2F2",
+                "#FF0055",
+                "#AA00FF",
+                "#2B00FF"
+              ]
+            }}
+            transition={{
+              yoyo: Infinity,
+              ease: "linear",
+              duration: 70
+            }}
+            offset="100%"
+          />
+        </linearGradient>
       </defs>
       <use
         fill="transparent"
-        stroke="hsl(0, 0%, 0%)"
+        stroke="url(#linear)"
         strokeWidth="4"
         clip-path="url(#b)"
         xlinkHref="#a"
