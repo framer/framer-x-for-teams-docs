@@ -5,50 +5,105 @@ title: "Icon"
 tags: ["components"]
 ---
 
-An **Icon** displays a Material Design Icon.
+An **Icon** gives an image for your app
 
-| Prop        | Type     | Notes                                          |
-| :---------- | :------- | :--------------------------------------------- |
-| **`icon`**  | `string` | A Material Design Icon name. See _Icon_ below. |
-| **`color`** | `string` | Any color.                                     |
-| **`size`**  | `number` | The size of the icon.                          |
+### Minimum Requirements
 
-### Icon
+The Icon component should at least have the following:
 
-The `icon` prop can accept either `“none”` or one of the Material Design Icon
-names from the list of
-[Icon Names](https://framer-learn-docs.netlify.com/content/IconNames/).
+- Primary Variant
+- Secondary Variant
+- Interaction State (Hover or Click)
 
-## Examples
+### Stretch Goals
 
-```tsx
-// Overrides
+After meeting the minimum requirements for the Icon component, you might have some extra time to add some extra functionality.
 
-import { Override } from "framer";
-import { colors } from "@framer/steveruizok.education/code";
+Here are some stretch goals:
 
-export function IconExample(): Override {
-  return {
-    color: colors.Primary,
-    icon: "accessible",
-    size: 24
-  };
-}
-```
+- Shape: Round, Square
+- Sizes: Large, Medium, Small
+
+### Starting Template
 
 ```tsx
-// Code component
-
 import * as React from "react";
-import { Frame } from "framer";
-// @ts-ignore
-import { colors, Icon } from "@framer/steveruizok.education/code";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
-export const IconExample = props => {
-  return (
-    <Frame size="100%" background="none">
-      <Icon center color={colors.Primary} icon="accessible" size={24} />
-    </Frame>
-  );
+/**
+ * This import will allow Overrides made in another file available to use in our component
+ *
+ * Change the override names and file name if yours is different
+ */
+// import { Primary, Secondary, Destructive } from "./Examples";
+
+/**
+ * This import allows us to use colors from the Loupe Store Package
+ *
+ * You can use a color by referencing it like: colors.primary
+ */
+//@ts-ignore
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
+
+export function Icon(props) {
+  if (props.kind == "primary") {
+    return (
+      <Frame
+        style={
+          {
+            // Primary styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Primary()}
+        size={"100%"}
+      />
+    );
+  }
+  // If you don't have a secondary style, you won't need more if statement blocks
+  if (props.kind == "secondary") {
+    return (
+      <Frame
+        style={
+          {
+            // Secondary styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Secondary()}
+        size={"100%"}
+      />
+    );
+  }
+  // Defualt to render a Frame if the kind prop isn't set or available
+  return <Frame />;
+}
+
+/**
+ * Default props for our component.
+ *
+ * Change the height and width to match your different component size
+ */
+Icon.defaultProps = {
+  height: 200,
+  width: 200,
+  kind: "primary"
 };
+
+/**
+ * Adding propertyControls to control the component kind
+ */
+addPropertyControls(Icon, {
+  kind: {
+    type: ControlType.Enum,
+    options: ["primary", "secondary", "destructive"],
+    optionTitles: ["Primary", "Secondary", "Destructive"]
+  }
+});
 ```
+
+### Tips
+
+Framer has a nice API to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- something
