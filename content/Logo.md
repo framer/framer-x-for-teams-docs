@@ -35,7 +35,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  *
  * Change the override names and file name if yours is different
  */
-// import { Primary, Secondary, Destructive } from "./Examples";
+// import { Light, Dark } from "./Examples";
 
 /**
  * This import allows us to use colors from the Loupe Store Package
@@ -46,31 +46,30 @@ import { Frame, addPropertyControls, ControlType } from "framer";
 import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
 export function Logo(props) {
-  if (props.kind == "primary") {
+  if (props.kind == "light") {
     return (
       <Frame
         style={
           {
-            // Primary styles go here
+            // Light styles go here
           }
         }
         //Atach an imported Overrides to your component
-        // {...Primary()}
+        // {...Light()}
         size={"100%"}
       />
     );
   }
-  // If you don't have a secondary style, you won't need more if statement blocks
-  if (props.kind == "secondary") {
+  if (props.kind == "dark") {
     return (
       <Frame
         style={
           {
-            // Secondary styles go here
+            // Dark styles go here
           }
         }
         //Atach an imported Overrides to your component
-        // {...Secondary()}
+        // {...Dark()}
         size={"100%"}
       />
     );
@@ -87,7 +86,7 @@ export function Logo(props) {
 Logo.defaultProps = {
   height: 200,
   width: 200,
-  kind: "primary"
+  kind: "light"
 };
 
 /**
@@ -96,8 +95,8 @@ Logo.defaultProps = {
 addPropertyControls(Logo, {
   kind: {
     type: ControlType.Enum,
-    options: ["primary", "secondary", "destructive"],
-    optionTitles: ["Primary", "Secondary", "Destructive"]
+    options: ["light", "dark"],
+    optionTitles: ["Light", "Dark"]
   }
 });
 ```

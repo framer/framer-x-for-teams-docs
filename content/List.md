@@ -20,7 +20,7 @@ After meeting the minimum requirements for the List component, you might have so
 
 Here are some stretch goals:
 
-- Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel
+- Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel.
 
 ### Starting Template
 
@@ -33,7 +33,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  *
  * Change the override names and file name if yours is different
  */
-// import { Primary, Secondary, Destructive } from "./Examples";
+// import { Default } from "./Examples";
 
 /**
  * This import allows us to use colors from the Loupe Store Package
@@ -44,37 +44,18 @@ import { Frame, addPropertyControls, ControlType } from "framer";
 import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
 export function List(props) {
-  if (props.kind == "primary") {
-    return (
-      <Frame
-        style={
-          {
-            // Primary styles go here
-          }
+  return (
+    <Frame
+      style={
+        {
+          // Primary styles go here
         }
-        //Atach an imported Overrides to your component
-        // {...Primary()}
-        size={"100%"}
-      />
-    );
-  }
-  // If you don't have a secondary style, you won't need more if statement blocks
-  if (props.kind == "secondary") {
-    return (
-      <Frame
-        style={
-          {
-            // Secondary styles go here
-          }
-        }
-        //Atach an imported Overrides to your component
-        // {...Secondary()}
-        size={"100%"}
-      />
-    );
-  }
-  // Defualt to render a Frame if the kind prop isn't set or available
-  return <Frame />;
+      }
+      //Atach an imported Overrides to your component
+      // {...Default()}
+      size={"100%"}
+    />
+  );
 }
 
 /**
@@ -84,20 +65,13 @@ export function List(props) {
  */
 List.defaultProps = {
   height: 200,
-  width: 200,
-  kind: "primary"
+  width: 200
 };
 
 /**
  * Adding propertyControls to control the component kind
  */
-addPropertyControls(List, {
-  kind: {
-    type: ControlType.Enum,
-    options: ["primary", "secondary", "destructive"],
-    optionTitles: ["Primary", "Secondary", "Destructive"]
-  }
-});
+addPropertyControls(List, {});
 ```
 
 ### Tips

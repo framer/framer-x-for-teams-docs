@@ -21,8 +21,9 @@ After meeting the minimum requirements for the Banner component, you might have 
 
 Here are some stretch goals:
 
-- Add a Sucess variant
+- Add a third variant
 - Sizes: Small, Medium, Large
+- Shape: Round, Square
 - Animate the banner in/out of the screen
 
 ### Starting Template

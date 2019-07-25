@@ -34,7 +34,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  *
  * Change the override names and file name if yours is different
  */
-// import { Primary, Secondary, Destructive } from "./Examples";
+// import { Primary, Secondary } from "./Examples";
 
 /**
  * This import allows us to use colors from the Loupe Store Package
@@ -95,8 +95,8 @@ Loader.defaultProps = {
 addPropertyControls(Loader, {
   kind: {
     type: ControlType.Enum,
-    options: ["primary", "secondary", "destructive"],
-    optionTitles: ["Primary", "Secondary", "Destructive"]
+    options: ["primary", "secondary"],
+    optionTitles: ["Primary", "Secondary"]
   }
 });
 ```

@@ -5,7 +5,9 @@ title: "Card"
 tags: ["components"]
 ---
 
-A **Card** is a structured container for content.
+A **Card** is a structured container for content and actions about a single subject.
+
+Optionally, the card can have a set structure (title, subtitle, description, actions, media, etc.)
 
 ### Minimum Requirements
 
@@ -21,7 +23,10 @@ After meeting the minimum requirements for the Card component, you might have so
 Here are some stretch goals:
 
 - Add variants: Secondary, Danger
-- Sizes: Small, Medium, Large
+- Shape: Round, Square
+- Sizes: Large, Medium, Small
+- Add Media
+- Add randomized media: coming from an API.
 
 ### Starting Template
 

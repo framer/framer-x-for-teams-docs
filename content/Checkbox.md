@@ -5,7 +5,7 @@ title: "Checkbox"
 tags: ["components"]
 ---
 
-A Checkbox allows a user to toggle between two values: `true` and `false`.
+A Checkbox allows a user to toggle between two values: `on` and `off`.
 
 ### Minimum Requirements
 
@@ -20,7 +20,9 @@ After meeting the minimum requirements for the Checkbox component, you might hav
 
 Here are some stretch goals:
 
+- Add an SVG that only displays when the box is checked. Use the built in Graphics tool!
 - Add [`propertyControl`](https://www.framer.com/api/property-controls) to toggle the Checkbox from `true`/`false`
+- Add a Hover state
 
 ### Starting Template
 
@@ -85,4 +87,25 @@ addPropertyControls(Checkbox, {
 
 Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
-- A toggle will noramlly have some sort of state (`on` or `off`). Try to use [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- A toggle will normally have some sort of state (`on` or `off`). Try to use Framer's [useCylce](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- An example override to toggle the background might look something like this:
+
+```tsx
+// import everything necessary: Overrides, useCycle hook and colors.
+import { Override, useCycle } from "framer";
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
+
+export function Checkbox(): Override {
+  const [active, inactive] = useCycle(
+    { background: colors.primaryActive },
+    { background: colors.backgroundGeneral }
+  );
+
+  return {
+    animate: active,
+    onTap() {
+      inactive();
+    }
+  };
+}
+```
