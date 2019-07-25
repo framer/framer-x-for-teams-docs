@@ -21,7 +21,7 @@ After meeting the minimum requirements for the Logo component, you might have so
 
 Here are some stretch goals:
 
-- Add [`propertyControl.Color`](https://www.framer.com/api/property-controls/#color) to change the color of your logo.
+- Add [`ControlType.Color`](https://www.framer.com/api/property-controls/#color) to change the color of your logo.
 - Add multiple sizes, like Small, Medium, and Large.
 
 ### Starting Template

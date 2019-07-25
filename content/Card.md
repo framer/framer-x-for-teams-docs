@@ -5,73 +5,79 @@ title: "Card"
 tags: ["components"]
 ---
 
-A card is a structured container for content. It has several parts: a header,
-footer, title, body, and image. The card will calculate certain sizes and
-posititions depending on the content provided.
+A **Card** is a structured container for content.
 
-| Prop                   | Type       | Notes                                                    |
-| :--------------------- | :--------- | :------------------------------------------------------- |
-| **`title`**            | `string`   | The card's title text.                                   |
-| **`body`**             | `string`   | The card's body text.                                    |
-| **`header`**           | `string`   | The card's header text.                                  |
-| **`footer`**           | `string`   | The card's footer text.                                  |
-| **`body`**             | `string`   | The card's body text.                                    |
-| **`autosize`**         | `boolean`  | Whether to resize the body container to fit its content. |
-| **`image`**            | `string`   | An image URL.                                            |
-| **`overlay`**          | `boolean`  | Whether to show an overlay on the card's image.          |
-| **`color`**            | `string`   | The color for the image overlay.                         |
-| **`favorite`**         | `boolean`  | Whether to display the favorite button.                  |
-| **`isFavorite`**       | `boolean`  | Whether the card should be favorited.                    |
-| **`onFavoriteChange`** | `function` | A callback to call when the user toggles the favorite.   |
+### Minimum Requirements
 
-## Examples
+The Card component should at least have the following:
 
-#### Overrides
+- Default Variant
+- Interaction State (Hover or Click)
+
+### Stretch Goals
+
+After meeting the minimum requirements for the Card component, you might have some extra time to add some extra functionality.
+
+Here are some stretch goals:
+
+- Add variants: Secondary, Danger
+- Sizes: Small, Medium, Large
+
+### Starting Template
 
 ```tsx
-// App.tsx
+import * as React from "react";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
-import { Override } from "framer";
+/**
+ * This import will allow Overrides made in another file available to use in our component
+ *
+ * Change the override names and file name if yours is different
+ */
+// import { Default } from "./Examples";
 
-// Event Handlers
+/**
+ * This import allows us to use colors from the Loupe Store Package
+ *
+ * You can use a color by referencing it like: colors.primary
+ */
+//@ts-ignore
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
-const handleFavoriteChange = isFavorite => {
-  console.log("Card is favorite: " + isFavorite);
+export function Card(props) {
+  return (
+    <Frame
+      style={
+        {
+          // Default styles go here
+        }
+      }
+      //Atach an imported Overrides to your component
+      // {...Default()}
+      size={"100%"}
+    />
+  );
+}
+
+/**
+ * Default props for our component.
+ *
+ * Change the height and width to match your different component size
+ */
+Card.defaultProps = {
+  height: 200,
+  width: 200
 };
 
-// Overrides
-
-export function CardExampleA(): Override {
-  return {
-    title: "Card A"
-  };
-}
-
-export function CardExampleB(): Override {
-  return {
-    title: "Card B",
-    body: "This is the list's second card"
-  };
-}
-
-export function CardExampleC(): Override {
-  return {
-    header: "Card C",
-    image: "http://imgur.com/exampleImage",
-    favorite: true,
-    isFavorite: true,
-    onFavoriteChange: handleFavoriteChange
-  };
-}
-
-export function CardExampleD(): Override {
-  return {
-    header: "Card D",
-    favorite: true,
-    isFavorite: true,
-    onFavoriteChange: handleFavoriteChange,
-    image: "http://imgur.com/exampleImage",
-    footer: "This card has a footer."
-  };
-}
+/**
+ * Adding propertyControls to control the component kind
+ */
+addPropertyControls(Card, {});
 ```
+
+### Tips
+
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- Cards can come in many different shapes and sizes. Use your imagination!
+- A card will most likely contain some text. See if you can add [`ControlType.String`](https://www.framer.com/api/property-controls/#string) to control the text!

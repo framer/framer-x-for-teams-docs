@@ -5,15 +5,13 @@ title: "Icon"
 tags: ["components"]
 ---
 
-An **Icon** gives an image for your app
+An **Icon** gives an image for your app.
 
 ### Minimum Requirements
 
 The Icon component should at least have the following:
 
-- Primary Variant
-- Secondary Variant
-- Interaction State (Hover or Click)
+- Default Variant
 
 ### Stretch Goals
 

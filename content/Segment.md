@@ -21,7 +21,7 @@ After meeting the minimum requirements for the Segment component, you might have
 
 Here are some stretch goals:
 
-- Add [`propertyControl.Array`](https://www.framer.com/api/property-controls/#array) to add more segments from the property panel.
+- Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add more segments from the property panel.
 
 ### Starting Template
 

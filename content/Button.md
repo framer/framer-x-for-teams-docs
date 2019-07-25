@@ -5,7 +5,7 @@ title: "Button"
 tags: ["components"]
 ---
 
-Buttons allow users to take actions, and make choices, with a single tap. It can have other interactions, such as hovers and it can contain text.
+**Buttons** allow users to take actions, and make choices, with a single tap. It can have other interactions, such as hovers and it can contain text.
 
 ### Minimum Requirements
 
@@ -21,7 +21,7 @@ After meeting the minimum requirements for the Button component, you might have 
 
 Here are some stretch goals:
 
-- Add more variants: Disabled, Destructive, etc.
+- Add variants: Disabled, Destructive, etc.
 - Shape: Round, Square
 - Sizes: Large, Medium, Small
 - Ghost Button
@@ -108,6 +108,6 @@ addPropertyControls(Button, {
 
 ### Tips
 
-Framer has a nice API to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
-- something
+- Buttons will normally have hover and click states. Use your imagination and the Framer API to experiment with some new ideas!

@@ -11,8 +11,7 @@ Avatars can be used to represent people or objects.
 
 The Avatar component should at least have the following:
 
-- Primary Variant
-- Secondary Variant
+- Default Variant
 - Interaction State (Hover or Click)
 
 ### Stretch Goals
@@ -24,7 +23,7 @@ Here are some stretch goals:
 - Shape: Round, Square
 - Sizes: Large, Medium, Small
 - Badge: Active, Inactive
-- Random images coming from an API (https://tinyfac.es/)
+- Add random images coming from an API (https://tinyfac.es/)
 
 ### Starting Template
 
@@ -37,7 +36,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  *
  * Change the override names and file name if yours is different
  */
-// import { Primary, Secondary, Destructive } from "./Examples";
+// import { Default } from "./Examples";
 
 /**
  * This import allows us to use colors from the Loupe Store Package
@@ -47,38 +46,20 @@ import { Frame, addPropertyControls, ControlType } from "framer";
 //@ts-ignore
 import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
-export function Component(props) {
-  if (props.kind == "primary") {
+export function Avatar(props) {
     return (
       <Frame
         style={
           {
-            // Primary styles go here
+            // Default styles go here
           }
         }
         //Atach an imported Overrides to your component
-        // {...Primary()}
+        // {...Default()}
         size={"100%"}
       />
     );
   }
-  // If you don't have a secondary style, you won't need more if statement blocks
-  if (props.kind == "secondary") {
-    return (
-      <Frame
-        style={
-          {
-            // Secondary styles go here
-          }
-        }
-        //Atach an imported Overrides to your component
-        // {...Secondary()}
-        size={"100%"}
-      />
-    );
-  }
-  // Defualt to render a Frame if the kind prop isn't set or available
-  return <Frame />;
 }
 
 /**
@@ -86,26 +67,19 @@ export function Component(props) {
  *
  * Change the height and width to match your different component size
  */
-Component.defaultProps = {
+Avatar.defaultProps = {
   height: 200,
-  width: 200,
-  kind: "primary"
+  width: 200
 };
 
 /**
- * Adding propertyControls to control the component kind
+ * Adding propertyControls here
  */
-addPropertyControls(Component, {
-  kind: {
-    type: ControlType.Enum,
-    options: ["primary", "secondary", "destructive"],
-    optionTitles: ["Primary", "Secondary", "Destructive"]
-  }
-});
+addPropertyControls(Avatar, {});
 ```
 
 ### Tips
 
-Framer has a nice API to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
-- something
+- Avatars normally have images. Using [`ControlType.File`](https://www.framer.com/api/property-controls/#file) might be a good idea to change the image in and out!

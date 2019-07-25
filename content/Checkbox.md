@@ -5,44 +5,84 @@ title: "Checkbox"
 tags: ["components"]
 ---
 
-Tapping on a **Checkbox** will toggled it between on or off.
+A Checkbox allows a user to toggle between two values: `true` and `false`.
 
-| Prop                | Type       | Notes |
-| :------------------ | :--------- | :---- |
-| **`value`**         | `boolean`  |       |
-| **`disabled`**      | `boolean`  |       |
-| **`validation`**    | `function` |       |
-| **`onValueChange`** | `function` |       |
+### Minimum Requirements
 
-See the [Inputs](content/Inputs) section for more on how inputs work in Learn.
+The Checkbox component should at least have the following:
 
-## Examples
+- Default Variant
+- Interaction State (Click)
 
-```tsx
-import { Override } from "framer";
+### Stretch Goals
 
-export function CheckboxExample(): Override {
-  return {
-    onValueChange: value => console.log("Value: " + value)
-  };
-}
-```
+After meeting the minimum requirements for the Checkbox component, you might have some extra time to add some extra functionality.
+
+Here are some stretch goals:
+
+- Add [`propertyControl`](https://www.framer.com/api/property-controls) to toggle the Checkbox from `true`/`false`
+
+### Starting Template
 
 ```tsx
 import * as React from "react";
-import { Frame } from "framer";
-// @ts-ignore
-import { Checkbox } from "@framer/steveruizok.education/code";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
-export const CheckboxExample = props => {
-  const handleValueChange = (value, valid) => {
-    console.log(`Checked: ${value}`);
-  };
+/**
+ * This import will allow Overrides made in another file available to use in our component
+ *
+ * Change the override names and file name if yours is different
+ */
+// import { Default } from "./Examples";
 
+/**
+ * This import allows us to use colors from the Loupe Store Package
+ *
+ * You can use a color by referencing it like: colors.primary
+ */
+//@ts-ignore
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
+
+export function Checkbox(props) {
   return (
-    <Frame size="100%" background="none">
-      <Checkbox center onValueChange={handleValueChange} />
-    </Frame>
+    <Frame
+      style={
+        {
+          // Default styles go here
+        }
+      }
+      //Atach an imported Overrides to your component
+      // {...Default()}
+      size={"100%"}
+    />
   );
+}
+
+/**
+ * Default props for our component.
+ *
+ * Change the height and width to match your different component size
+ */
+Checkbox.defaultProps = {
+  height: 200,
+  width: 200,
+  kind: "primary"
 };
+
+/**
+ * Adding propertyControls to control the component kind
+ */
+addPropertyControls(Checkbox, {
+  kind: {
+    type: ControlType.Enum,
+    options: ["primary", "secondary", "destructive"],
+    optionTitles: ["Primary", "Secondary", "Destructive"]
+  }
+});
 ```
+
+### Tips
+
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- A toggle will noramlly have some sort of state (`on` or `off`). Try to use [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!

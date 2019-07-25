@@ -20,7 +20,7 @@ After meeting the minimum requirements for the Navigation component, you might h
 
 Here are some stretch goals:
 
-- Add [`propertyControl.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel.
+- Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel.
 
 ### Starting Template
 

@@ -20,7 +20,7 @@ After meeting the minimum requirements for the List component, you might have so
 
 Here are some stretch goals:
 
-- Add [`propertyControl.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel
+- Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel
 
 ### Starting Template
 

@@ -5,53 +5,105 @@ title: "Banner"
 tags: ["components"]
 ---
 
-A **CardList** is a scrollable stack of cards.
+A **Banner** is a section of an app used to give users information
 
-| Prop            | Type       | Notes                                                |
-| :-------------- | :--------- | :--------------------------------------------------- |
-| **`cards`**     | `object[]` | See _Cards_ below.                                   |
-| **`emptyText`** | `string`   | The text to display when the `cards` array is empty. |
+### Minimum Requirements
 
-## Cards
+The Banner component should at least have the following:
 
-The `cards` prop accepts an array of objects. Each object in the array is the
-props for a [Card](Card) instance.
+- Default Variant
+- Destructive Variant
+- Interaction State (Hover or Click)
 
-## Examples
+### Stretch Goals
 
-#### Overrides
+After meeting the minimum requirements for the Banner component, you might have some extra time to add some extra functionality.
+
+Here are some stretch goals:
+
+- Add a Sucess variant
+- Sizes: Small, Medium, Large
+- Animate the banner in/out of the screen
+
+### Starting Template
 
 ```tsx
-// App.tsx
+import * as React from "react";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
-import { Override } from 'framer'
+/**
+ * This import will allow Overrides made in another file available to use in our component
+ *
+ * Change the override names and file name if yours is different
+ */
+// import { Default, Destructive } from "./Examples";
 
-// Event Handlers
+/**
+ * This import allows us to use colors from the Loupe Store Package
+ *
+ * You can use a color by referencing it like: colors.primary
+ */
+//@ts-ignore
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
-const handleFavoriteChange = (isFavorite) => {
-	console.log("Card C is favorite: " + isFavorite)
+export function Banner(props) {
+  if (props.kind == "default") {
+    return (
+      <Frame
+        style={
+          {
+            // Default styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Default()}
+        size={"100%"}
+      />
+    );
+  }
+  if (props.kind == "destructive") {
+    return (
+      <Frame
+        style={
+          {
+            // Destructive styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Destructive()}
+        size={"100%"}
+      />
+    );
+  }
+  // Fallback to render a Frame if the kind prop isn't set or available
+  return <Frame />;
 }
 
-// Overrides
+/**
+ * Default props for our component.
+ *
+ * Change the height and width to match your different component size
+ */
+Banner.defaultProps = {
+  height: 200,
+  width: 200,
+  kind: "default"
+};
 
-export function CardListExample(): Override {
-	return {
-		cards: [
-			{
-				title: 'Card A',
-			},
-			{
-				title: 'Card B',
-				body: "This is the list's second card",
-			},
-			{
-				image: 'http://imgur.com/exampleImage',
-				favorite: true,
-				isFavorite: true,
-				onFavoriteChange: handleFavoriteChange
-				},
-			},
-		],
-	}
-}
+/**
+ * Adding propertyControls to control the component kind
+ */
+addPropertyControls(Banner, {
+  kind: {
+    type: ControlType.Enum,
+    options: ["default", "destructive"],
+    optionTitles: ["Default", "Destructive"]
+  }
+});
 ```
+
+### Tips
+
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- A banner will most likely contain some text. See if you can add [`ControlType.String`](https://www.framer.com/api/property-controls/#string) to control the text!
