@@ -50,17 +50,25 @@ export const IndexPage = (props: any) => {
       <p>Every code component should at least have the following:</p>
 
       <ul>
-        <li>Primary Variant</li>
+        <li>Default / Primary Variant</li>
         <li>Secondary Variant</li>
         <li>Interaction State (Hover or Click)</li>
       </ul>
 
-      <p>For Interactions, see the tips section for your component</p>
+      <p>
+        * Some components might not require a Secondary state. See your
+        component's documentation for more information.
+      </p>
+      <p>
+        For Interactions, see the <b>tips</b> section for your component for
+        ideas.
+      </p>
 
       <h2>Color Tokens</h2>
       <p>
         We have some already defined colors ready to be used, which you can use
-        in the canvas or as variables in your code.
+        in the canvas or as variables in your code. See{" "}
+        <Link to="/content/Colors">here</Link> for more information on Colors.
       </p>
 
       <h4>Primary Colors</h4>

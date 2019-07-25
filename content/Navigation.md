@@ -5,78 +5,104 @@ title: "Navigation"
 tags: ["components"]
 ---
 
-An **ItemList** is a scrollable stack of [RowItem]("./RowItem")s.
+A **Navigation** is a component that allows you to travel through your app or website.
 
-| Prop            | Type       | Notes                                                |
-| :-------------- | :--------- | :--------------------------------------------------- |
-| **`items`**     | `object[]` | See _Items_ below.                                   |
-| **`emptyText`** | `string`   | The text to display when the `items` array is empty. |
+### Minimum Requirements
 
-## Items
+The Navigation component should at least have the following:
 
-The `items` prop accepts an array of objects. Each object in the array is the
-props for a [RowItem](content/RowItem) instance.
+- Default Variant
+- Interaction State (Hover or Click)
 
-## Examples
+### Stretch Goals
 
-#### Overrides
+After meeting the minimum requirements for the Navigation component, you might have some extra time to add some extra functionality.
+
+Here are some stretch goals:
+
+- Add [`propertyControl.Array`](https://www.framer.com/api/property-controls/#array) to add items from the property panel.
+
+### Starting Template
 
 ```tsx
-// App.tsx
+import * as React from "react";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
-import { Override, Data } from 'framer'
+/**
+ * This import will allow Overrides made in another file available to use in our component
+ *
+ * Change the override names and file name if yours is different
+ */
+// import { Primary, Secondary, Destructive } from "./Examples";
 
-// State
+/**
+ * This import allows us to use colors from the Loupe Store Package
+ *
+ * You can use a color by referencing it like: colors.primary
+ */
+//@ts-ignore
+import { colors } from "@framer/addison.loupe-colors/code/canvas";
 
-const appState = Data({
-  mode: "dark",
-  count: 1
-})
-
-// Event handlers
-
-const handleLinkTap = () => {
-  console.log("Tapped!")
+export function Navigation(props) {
+  if (props.kind == "primary") {
+    return (
+      <Frame
+        style={
+          {
+            // Primary styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Primary()}
+        size={"100%"}
+      />
+    );
+  }
+  // If you don't have a secondary style, you won't need more if statement blocks
+  if (props.kind == "secondary") {
+    return (
+      <Frame
+        style={
+          {
+            // Secondary styles go here
+          }
+        }
+        //Atach an imported Overrides to your component
+        // {...Secondary()}
+        size={"100%"}
+      />
+    );
+  }
+  // Defualt to render a Frame if the kind prop isn't set or available
+  return <Frame />;
 }
 
-const setDarkMode = (value: boolean) => {
-  appState.mode = value ? "dark" : "light"
-}
+/**
+ * Default props for our component.
+ *
+ * Change the height and width to match your different component size
+ */
+Navigation.defaultProps = {
+  height: 200,
+  width: 200,
+  kind: "primary"
+};
 
-const setCount = (value: boolean) => {
-  appState.count = value
-}
-
-// Overrides
-
-export function ItemListExample(): Override {
-	return {
-		items: [
-			{
-				text: 'List Item',
-			},
-			{
-				text: 'Link',
-        component: 'icon',
-        icon: "chevron-right"
-        onTap: handleLinkTap
-			},
-			{
-				text: 'Dark Mode',
-        component: 'switch',
-        value: appState.mode === "dark"
-        onValueChange: setDarkMode
-			},
-			{
-				text: 'Count',
-        component: 'stepper',
-        min: 0,
-        max: 10,
-        step: 1,
-        value: appState.count,
-        onValueChange: setCount
-			}
-		],
-	}
-}
+/**
+ * Adding propertyControls to control the component kind
+ */
+addPropertyControls(Navigation, {
+  kind: {
+    type: ControlType.Enum,
+    options: ["primary", "secondary", "destructive"],
+    optionTitles: ["Primary", "Secondary", "Destructive"]
+  }
+});
 ```
+
+### Tips
+
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- A navigation component usually contains links, so a good idea for interaction might be a hover state per list item.
+- Navigation components can come both vertical and horizontal. Try to stick with one to start, and add the other if time allows!
