@@ -1,7 +1,11 @@
 body {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 h1 {
-	font-size: 72px;
+  font-size: 72px;
+}
+
+code {
+  color: black;
 }

@@ -1,7 +1,7 @@
 ---
-path: "/content/Image/"
+path: "/content/Loader/"
 date: "2019-07-01"
-title: "Image"
+title: "Loader"
 tags: ["components"]
 ---
 

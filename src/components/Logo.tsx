@@ -1,48 +1,29 @@
 import * as React from "react";
-import { colors } from "./colors";
 
 export const Logo = () => {
-  const flat = false;
-
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 50 50`}
-      width="100%"
-      height="100%"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 50 50"
     >
       <defs>
-        <linearGradient
-          id="idsKMxYfO70g124009"
-          gradientTransform="rotate(45, 0.5, 0.5)"
-        >
-          <stop offset="0" stopColor={colors.Primary} stopOpacity="1" />
-          <stop offset="1" stopColor={colors.Secondary} stopOpacity="1" />
-        </linearGradient>
+        <path
+          id="a"
+          d="M25 0c13.807 0 25 11.193 25 25S38.807 50 25 50 0 38.807 0 25 11.193 0 25 0z"
+        />
+        <clipPath id="b">
+          <use xlinkHref="#a" />
+        </clipPath>
       </defs>
-      <circle
-        cx={25}
-        cy={25}
-        r={23.5}
-        fill={flat ? "none" : colors.Light}
-        strokeWidth="3"
-        stroke="url(#idsKMxYfO70g124009)"
+      <use
+        fill="transparent"
+        stroke="hsl(0, 0%, 0%)"
+        strokeWidth="4"
+        clip-path="url(#b)"
+        xlinkHref="#a"
       />
-      <g transform="translate(9.834 10.212)">
-        <path
-          d="M 3.734 14.088 C 3.653 13.098 2.204 13.098 2.122 14.088 L 1.38 23.121 C 1.339 23.618 1.485 24.113 1.79 24.508 L 2.122 24.937 C 2.53 25.465 3.327 25.465 3.734 24.937 L 4.066 24.508 C 4.371 24.113 4.518 23.618 4.477 23.121 Z"
-          transform="translate(0 .8)"
-          fill={flat ? colors.Darker : colors.Accent}
-        />
-        <path
-          d="M 16.127 0.145 C 15.809 -0.048 15.41 -0.048 15.092 0.145 L 0.482 8.99 C -0.161 9.379 -0.161 10.312 0.482 10.701 L 15.092 19.547 C 15.41 19.739 15.809 19.739 16.127 19.547 L 30.737 10.701 C 31.38 10.312 31.38 9.379 30.737 8.99 Z"
-          fill={flat ? colors.Darker : colors.Primary}
-        />
-        <path
-          d="M 24.431 22.663 C 24.431 23.344 24.085 23.977 23.513 24.345 L 16.691 28.734 C 16.032 29.158 15.186 29.158 14.527 28.734 L 7.706 24.345 C 7.134 23.977 6.788 23.344 6.788 22.663 L 6.788 16.077 L 15.092 21.104 C 15.41 21.297 15.809 21.297 16.127 21.104 L 24.431 16.077 Z"
-          fill={flat ? colors.Darker : colors.Primary}
-        />
-      </g>
+      <path d="M28.364 30.8a10.282 10.282 0 010-12.6l1.438-1.867c1.853-2.406 1.523-5.791-.761-7.815-2.285-2.024-5.776-2.024-8.061 0s-2.615 5.409-.762 7.815l1.438 1.867a10.282 10.282 0 010 12.6l-1.438 1.867c-1.853 2.406-1.523 5.791.762 7.815s5.776 2.024 8.061 0c2.284-2.024 2.614-5.409.761-7.815zm-5.35-17.967a1.946 1.946 0 011.232-1.799 2.039 2.039 0 012.179.42 1.91 1.91 0 01.434 2.121 2 2 0 01-1.846 1.202c-1.103 0-1.997-.87-1.999-1.944zm1.999 25.277a1.998 1.998 0 01-1.848-1.196 1.907 1.907 0 01.43-2.12 2.034 2.034 0 012.176-.423 1.943 1.943 0 011.232 1.796c-.001 1.071-.891 1.94-1.99 1.943z" />
     </svg>
   );
 };

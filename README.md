@@ -1,3 +1,1 @@
-# Learn Design System docs
-
-View the docs [here](https://framer-learn-docs.netlify.com).
+# Loupe 2019 Framer X for Teams Official Docs

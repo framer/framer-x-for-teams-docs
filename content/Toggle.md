@@ -1,7 +1,7 @@
 ---
-path: "/content/Switch/"
+path: "/content/Toggle/"
 date: "2019-07-01"
-title: "Switch"
+title: "Toggle"
 tags: ["components"]
 ---
 

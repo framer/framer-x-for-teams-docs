@@ -1,7 +1,7 @@
 ---
-path: "/content/Favorite/"
+path: "/content/List/"
 date: "2019-07-01"
-title: "Favorite"
+title: "List"
 tags: ["components"]
 ---
 

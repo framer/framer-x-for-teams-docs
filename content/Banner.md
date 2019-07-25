@@ -1,7 +1,7 @@
 ---
-path: "/content/CardList/"
+path: "/content/Banner/"
 date: "2019-07-01"
-title: "CardList"
+title: "Banner"
 tags: ["components"]
 ---
 

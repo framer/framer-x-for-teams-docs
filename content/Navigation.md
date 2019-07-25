@@ -1,7 +1,7 @@
 ---
-path: "/content/ItemList/"
+path: "/content/Navigation/"
 date: "2019-07-01"
-title: "ItemList"
+title: "Navigation"
 tags: ["components"]
 ---
 
