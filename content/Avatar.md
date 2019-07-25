@@ -5,7 +5,7 @@ title: "Avatar"
 tags: ["components"]
 ---
 
-An **Avatar** gives an image for your app
+Avatars can be used to represent people or objects.
 
 ### Minimum Requirements
 
@@ -23,6 +23,8 @@ Here are some stretch goals:
 
 - Shape: Round, Square
 - Sizes: Large, Medium, Small
+- Badge: Active, Inactive
+- Random images coming from an API (https://tinyfac.es/)
 
 ### Starting Template
 
