@@ -2,7 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { css } from "@emotion/core";
-import { Header } from "./Header";
+// @ts-ignore
+import favicon from "../../static/favicon/favicon.png";
 import { Sidebar } from "./Sidebar";
 import { colors } from "./colors";
 
@@ -143,6 +144,9 @@ export const Layout = ({ children }: LayoutProps) => (
                 name: "keywords",
                 content: data.site.siteMetadata.keywords
               }
+            ]}
+            link={[
+              { rel: "shortcut icon", type: "image/x-icon", href: `${favicon}` }
             ]}
           />
           {/* <Header title={data.site.siteMetadata.title} /> */}
