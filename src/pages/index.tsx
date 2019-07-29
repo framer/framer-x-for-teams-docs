@@ -415,7 +415,7 @@ export const IndexPage = (props: any) => {
         <pre style={{ padding: 10 }}>
           import {"{"} Override {"}"} from "framer"{"\n"}
           import {"{"} colors {"}"} from
-          "@framer/addison.loupe-colors/code/canvas"{"\n"}
+          "@framer/aroagb.loupe-colors/code/canvas"{"\n"}
           {"\n"}
           export function Primary(): Override {"{\n"}
           {"    "}return {"{\n"}
@@ -432,7 +432,7 @@ export const IndexPage = (props: any) => {
         <pre style={{ padding: 10 }}>
           import {"{"} Frame {"}"} from "framer"{"\n"}
           import {"{"} colors {"}"} from
-          "@framer/addison.loupe-colors/code/canvas"{"\n"}
+          "@framer/aroagb.loupe-colors/code/canvas"{"\n"}
           {"\n"}
           export function Component() {"{\n"}
           {"    "}return &lt;Frame background={"{"}colors.backgroundPrimary

@@ -42,7 +42,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  * You can use a color by referencing it like: colors.primary
  */
 //@ts-ignore
-import { colors } from "@framer/addison.loupe-colors/code/canvas";
+import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Loader(props) {
   if (props.kind == "primary") {

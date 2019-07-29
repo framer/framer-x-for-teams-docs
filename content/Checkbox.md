@@ -43,7 +43,7 @@ import { Frame, addPropertyControls, ControlType } from "framer";
  * You can use a color by referencing it like: colors.primary
  */
 //@ts-ignore
-import { colors } from "@framer/addison.loupe-colors/code/canvas";
+import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Checkbox(props) {
   return (
@@ -93,7 +93,7 @@ Framer has a nice [API](https://www.framer.com/api/) to help add things like ani
 ```tsx
 // import everything necessary: Overrides, useCycle hook and colors.
 import { Override, useCycle } from "framer";
-import { colors } from "@framer/addison.loupe-colors/code/canvas";
+import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Checkbox(): Override {
   const [active, inactive] = useCycle(

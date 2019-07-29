@@ -5,7 +5,7 @@ title: "Colors"
 tags: ["components"]
 ---
 
-The Loupe Colors package includes a set of Shared Colors. Visit the homepage to get a more detailed description of how and when to use each color.
+The [Loupe Colors](https://store.framer.com/package/aroagb/loupe-colors) package includes a set of Shared Colors. Visit the homepage to get a more detailed description of how and when to use each color.
 
 | Color                 | Code      |
 | :-------------------- | :-------- |
@@ -42,7 +42,7 @@ importing them as shown below.
 ```tsx
 // Overrides
 import { Override } from "framer"
-import { colors } from '@framer/addison.loupe-colors/code/canvas'
+import { colors } from '@framer/aroagb.loupe-colors/code/canvas'
 
 export function ColorExample: Override {
   return {
@@ -55,7 +55,7 @@ export function ColorExample: Override {
 ```tsx
 // Code Component
 import { Override } from "framer";
-import { colors } from "@framer/addison.loupe-colors/code/canvas";
+import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Component() {
   return <Frame background={colors.backgroundPrimary} />;
