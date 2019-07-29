@@ -26,6 +26,37 @@ export const IndexPage = (props: any) => {
         we'll gain a deeper understanding of what the collaboration aspect looks
         like in Framer X.
       </p>
+
+      <h2>Important Notes</h2>
+      <p>
+        It's important to remember that Framer Web is in an early beta stage,
+        and only avalable for attendees of Framer X for Teams.
+      </p>
+
+      <p>
+        With this in mind, there are a few things you should know about the
+        current status and usage of Framer Web.
+      </p>
+
+      <b>
+        <h3>*Only one person should touch the canvas at a time.*</h3>
+      </b>
+      <p>
+        This is a small, but unfortuante bug in Framer Web at the momement.
+        Luckily, in your group, you will have one designer, and one developer.
+        The designer is the one who will be using the canvas, while the
+        developer will mainly be in the code editor, so this should not be a
+        major problem for your group.
+      </p>
+
+      <p>
+        For groups with more than one designer, you can create different Framer
+        Web Projects, where you can design and plan the same components. When it
+        comes time to building your components, you can copy and paste your work
+        into the project the developer is working on, or be bold and try to code
+        it yourself!
+      </p>
+
       <h2>Resources</h2>
       <p>
         While building components for a design system, it's important to know
