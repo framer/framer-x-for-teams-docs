@@ -30,31 +30,44 @@ export const IndexPage = (props: any) => {
       <h2>Important Notes</h2>
       <p>
         It's important to remember that Framer Web is in an early beta stage,
-        and only avalable for attendees of Framer X for Teams.
+        and only available for attendees of Framer X for Teams at Loupe 2019.
       </p>
 
       <p>
         With this in mind, there are a few things you should know about the
-        current status and usage of Framer Web.
+        current status and usage of Framer Web. If there are any blockers for
+        you and your team, you can always resort to Framer X to finish your
+        components.
       </p>
 
-      <b>
-        <h3>*Only one person should touch the canvas at a time.*</h3>
-      </b>
-      <p>
-        This is a small, but unfortuante bug in Framer Web at the momement.
-        Luckily, in your group, you will have one designer, and one developer.
-        The designer is the one who will be using the canvas, while the
-        developer will mainly be in the code editor, so this should not be a
-        major problem for your group.
-      </p>
+      <h4 style={{ fontSize: 20 }}>
+        Preview might not be as accurate as in Framer X.
+      </h4>
 
       <p>
-        For groups with more than one designer, you can create different Framer
-        Web Projects, where you can design and plan the same components. When it
-        comes time to building your components, you can copy and paste your work
-        into the project the developer is working on, or be bold and try to code
-        it yourself!
+        This is a small, but unfortunate bug in Framer Web at the moment. While
+        it should work in most cases, it's important to keep this in mind.
+      </p>
+
+      <h4 style={{ fontSize: 20 }}>
+        Some shortcuts might not work the same as in Framer X.
+      </h4>
+
+      <p>
+        Another small bug, but shouldn't cause any major problems when working
+        in your project.
+      </p>
+
+      <h4 style={{ fontSize: 20 }}>
+        While multiple people can design on the canvas, the code editor is still
+        limited to one person at a time.
+      </h4>
+
+      <p>
+        We're splitting our groups up in a way where there should only be one
+        lead developer in the project at a time, but this is another thing to
+        keep in mind when creating your components. You can always start a new
+        project and code in a seperate project if you'd like to code yourself!
       </p>
 
       <h2>Resources</h2>
@@ -62,7 +75,7 @@ export const IndexPage = (props: any) => {
         While building components for a design system, it's important to know
         some guidelines and rules around the things we're building.
       </p>
-      <p>You'll find information on this website about:</p>
+      <p>Here, you'll find information on:</p>
       <ul>
         <li>Minimum requirements for components</li>
         <li>Color and design tokens</li>
@@ -446,7 +459,8 @@ export const IndexPage = (props: any) => {
 
       <p>
         When coding your component, you can use the following template to speed
-        things up.
+        things up. You can also find a template on your component's
+        documentation page.
       </p>
 
       <p>
