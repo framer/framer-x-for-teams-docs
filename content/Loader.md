@@ -11,94 +11,20 @@ A **Loader** is a component to communicate a loading state.
 
 The Loader component should at least have the following:
 
-- Primary Variant
-- Secondary Variant
-- Interaction State (Hover or Click)
-
-### Stretch Goals
-
-After meeting the minimum requirements for the Loader component, you might have some extra time to add some extra functionality.
-
-Here are some stretch goals:
-
-- Use the [Framer API](https://www.framer.com/api/animation/) to animate your component
+- Default state
+- Looped animation
 
 ### Starting Template
 
 ```tsx
 import * as React from "react";
-import { Frame, addPropertyControls, ControlType } from "framer";
-
-/**
- * This import will allow Overrides made in another file available to use in our component
- *
- * Change the override names and file name if yours is different
- */
-// import { Primary, Secondary } from "./Examples";
-
-/**
- * This import allows us to use colors from the Loupe Store Package
- *
- * You can use a color by referencing it like: colors.primary
- */
+import { Frame } from "framer";
 //@ts-ignore
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Loader(props) {
-  if (props.kind == "primary") {
-    return (
-      <Frame
-        style={
-          {
-            // Primary styles go here
-          }
-        }
-        //Atach an imported Overrides to your component
-        // {...Primary()}
-        size={"100%"}
-      />
-    );
-  }
-  // If you don't have a secondary style, you won't need more if statement blocks
-  if (props.kind == "secondary") {
-    return (
-      <Frame
-        style={
-          {
-            // Secondary styles go here
-          }
-        }
-        //Atach an imported Overrides to your component
-        // {...Secondary()}
-        size={"100%"}
-      />
-    );
-  }
-  // Defualt to render a Frame if the kind prop isn't set or available
-  return <Frame />;
+  return <Frame style={{}} />;
 }
-
-/**
- * Default props for our component.
- *
- * Change the height and width to match your different component size
- */
-Loader.defaultProps = {
-  height: 200,
-  width: 200,
-  kind: "primary"
-};
-
-/**
- * Adding propertyControls to control the component kind
- */
-addPropertyControls(Loader, {
-  kind: {
-    type: ControlType.Enum,
-    options: ["primary", "secondary"],
-    optionTitles: ["Primary", "Secondary"]
-  }
-});
 ```
 
 ### Tips

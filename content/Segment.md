@@ -12,8 +12,27 @@ be selected at once.
 
 The Segment component should at least have the following:
 
-- Default Variant
-- Interaction State (Hover or Click)
+- Default state
+- Click state
+
+### Starting Template
+
+```tsx
+import * as React from "react";
+import { Frame } from "framer";
+//@ts-ignore
+import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
+
+export function Segment(props) {
+  return <Frame style={{}} />;
+}
+```
+
+### Tips
+
+Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+
+- Segments noramlly have some sort of state to hold the seleted item for each section. Try to use [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
 
 ### Stretch Goals
 
@@ -22,61 +41,4 @@ After meeting the minimum requirements for the Segment component, you might have
 Here are some stretch goals:
 
 - Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add more segments from the property panel.
-
-### Starting Template
-
-```tsx
-import * as React from "react";
-import { Frame, addPropertyControls, ControlType } from "framer";
-
-/**
- * This import will allow Overrides made in another file available to use in our component
- *
- * Change the override names and file name if yours is different
- */
-// import { Default } from "./Examples";
-
-/**
- * This import allows us to use colors from the Loupe Store Package
- *
- * You can use a color by referencing it like: colors.primary
- */
-//@ts-ignore
-import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
-
-export function Segment(props) {
-  return (
-    <Frame
-      style={
-        {
-          // Default styles go here
-        }
-      }
-      //Atach an imported Overrides to your component
-      // {...Default()}
-      size={"100%"}
-    />
-  );
-}
-
-/**
- * Default props for our component.
- *
- * Change the height and width to match your different component size
- */
-Segment.defaultProps = {
-  height: 200,
-  width: 200
-};
-
-/**
- * Adding propertyControls to control the component kind
- */
-addPropertyControls(Segment, {});
-```
-
-### Tips
-
-Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
-
-- Segments noramlly have some sort of state (`true` or `false`) for each section. Try to use [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- Hook the Segment up to something else on the canvas!
