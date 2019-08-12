@@ -11,7 +11,7 @@ Optionally, the card can have a set structure (title, subtitle, description, act
 
 ### Minimum Requirements
 
-The Card component should at least have the following:
+The Card component will be delivered as a code component and should at least have the following:
 
 - Open state
 - Closed state
@@ -34,20 +34,18 @@ export function Card(props) {
 Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
 - Cards can come in many different shapes and sizes. Use your imagination!
+- Check the [Learn Design System](https://framer-learn-docs.netlify.com/docs/Card) for some already done examples.
 - A card will most likely contain some text. See if you can add [`ControlType.String`](https://www.framer.com/api/property-controls/#string) to control the text!
-- A card will normally have some sort of state (`open` or `closed`). Try to use Framer's [useCylce](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- A card will normally have some sort of state (`open` or `closed`). Try to use Framer's [useCycle](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
 
 ```tsx
 import { Frame, useCycle } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Card(props) {
-  const [active, inactive] = useCycle(
-    { background: colors.primaryActive },
-    { background: colors.backgroundGeneral }
-  );
+  const [active, inactive] = useCycle({ height: 50 }, { height: 100 });
 
-  return <Frame style={active} onClick={inactive} />;
+  return <Frame animate={active} onClick={inactive} />;
 }
 ```
 
@@ -62,3 +60,8 @@ Here are some stretch goals:
 - Sizes: Large, Medium, Small
 - Add Media
 - Add randomized media: coming from an API.
+
+For some inspiration, here are some card examples:
+
+- [Ant Design](https://ant.design/components/card/)
+- [Dribbble](https://dribbble.com/search/shots/popular?q=cards)

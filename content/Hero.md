@@ -9,36 +9,19 @@ A **Hero** gives an image for your website or app
 
 ### Minimum Requirements
 
-The Hero component should at least have the following:
+The Hero component will be delivered as a design component and should at least have the following:
 
-- Default state
-- Hover state
-
-### Starting Template
-
-```tsx
-import * as React from "react";
-import { Frame } from "framer";
-//@ts-ignore
-import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
-
-export function Hero(props) {
-  return <Frame style={{}} />;
-}
-```
+- Home Page: Large (width: 1240px x height: 782px)
+- Hiring Page: Small (width: 555px x height: 306px)
 
 ### Tips
 
-Framer has a nice API to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
+Hero components are the first thing a user might see in an app or website. Be creative and think of all the things a user might want to when visiting the homepage!
 
-- Hero components come in a number of sizes, and normally are the first to appear on a website or app.
+- Uploaded images and gifs are not yet supported in Web, but work in Framer X Desktop. If you want to include images in web, check out these packages:
+  - [Unsplash Package](https://store.framer.com/search?q=unsplash)
+  - [Undraw](https://store.framer.com/package/steveruizok/undraw)
 
-### Stretch Goals
+For some inspiration, here are some Hero examples:
 
-After meeting the minimum requirements for the Banner component, you might have some extra time to add some extra functionality.
-
-Here are some stretch goals:
-
-- Add more variants
-- Sizes: Small, Medium, Large
-- Shape: Round, Square
+- [Dribbble](https://dribbble.com/search?q=hero)

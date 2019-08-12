@@ -9,7 +9,7 @@ A Checkbox allows a user to toggle between two values: `on` and `off`.
 
 ### Minimum Requirements
 
-The Checkbox component should at least have the following:
+The Checkbox component will be delivered as a code component and should at least have the following:
 
 - Checked state
 - Unchecked state
@@ -31,7 +31,8 @@ export function Checkbox(props) {
 
 Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
-- A radio will normally have some sort of state (`on` or `off`). Try to use Framer's [useCylce](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- A checkbox will normally have some sort of state (`on` or `off`). Try to use Framer's [useCycle](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- Check the [Learn Design System](https://framer-learn-docs.netlify.com/docs/Checkbox) for some already done examples.
 - An example component to toggle the background might look something like this:
 
 ```tsx
@@ -50,7 +51,7 @@ export function Checkbox(props) {
 
 ### Stretch Goals
 
-After meeting the minimum requirements for the Checkbox component, you might have some extra time to add some extra functionality. For some inspiration, you can find some checkbox examples [here](https://ant.design/components/checkbox/)
+After meeting the minimum requirements for the Checkbox component, you might have some extra time to add some extra functionality.
 
 Here are some stretch goals:
 
@@ -58,4 +59,10 @@ Here are some stretch goals:
 - Add some text and a propertyControl to show/hide the text.
 - Add an SVG that only displays when the box is checked. Use the built in Graphics tool!
 - Animate the SVG as it appears.
-- Add a Hover state
+- Add a Hover state.
+
+For some inspiration, here are some checkbox examples:
+
+- [Ant Design](https://ant.design/components/checkbox/)
+- [CSS Checkboxes](https://freefrontend.com/css-checkboxes/)
+- [Dribbble](https://dribbble.com/search?q=checkbox)

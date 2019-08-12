@@ -6,12 +6,10 @@ tags: ["components"]
 ---
 
 A **Stepper** allows a user to choose a number between a minimum and maximum value.
-It may be "stepped", so that its value only changes in increments of a given
-number.
 
 ### Minimum Requirements
 
-The Stepper component should at least have the following:
+The Stepper component will be delivered as a code component and should at least have the following:
 
 - Default state
 - Click state
@@ -34,6 +32,7 @@ export function Stepper(props) {
 Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
 - Steppers noramlly have some sort of state to hold the number. Try to use [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
+- Check the [Learn Design System](https://framer-learn-docs.netlify.com/docs/Stepper) for some already done examples.
 - An example component to hold component state might look something like this:
 
 ```tsx
@@ -54,3 +53,7 @@ After meeting the minimum requirements for the Stepper component, you might have
 Here are some stretch goals:
 
 - Add [`propertyControl`](https://www.framer.com/api/property-controls) to set a min and a max for the Stepper.
+
+For some inspiration, here are some slider examples:
+
+- [Dribbble](https://dribbble.com/search?q=stepper)

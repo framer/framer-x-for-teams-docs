@@ -49,77 +49,38 @@ export const IndexPage = (props: any) => {
       <p>
         We'll be splitting up into smaller teams, with at least one developer
         and one designer. Our goal is to create a shared design system with
-        interactive components. Through this, we'll gain a deeper understanding
-        of what the collaboration aspect looks like in Framer X.
-      </p>
-
-      <h2>
-        <motion.u
-          animate={{
-            borderBottom: [
-              "3px solid #FFC6A8",
-              "3px solid #0055FF",
-              "3px solid #E7FFF7",
-              "3px solid #FFF9DA",
-              "3px solid #FF7744",
-              "3px solid #F3F2F2"
-            ]
-          }}
-          style={{
-            paddingBottom: 5,
-            textDecoration: "none",
-            borderBottom: "3px solid #05f"
-          }}
-          transition={{
-            yoyo: Infinity,
-            ease: "linear",
-            duration: 20
-          }}
-        >
-          Important Notes
-        </motion.u>
-      </h2>
-      <p>
-        It's important to remember that Framer Web is in an early beta stage,
-        and only available for attendees of Framer X for Teams at Loupe 2019.
+        interactive components to fill in the landing page shown at the
+        beginning of the workshop.
       </p>
 
       <p>
-        With this in mind, there are a few things you should know about the
-        current status and usage of Framer Web. If there are any blockers for
-        you and your team, you can always resort to Framer X to finish your
-        components.
+        Each team will be assigned one component and will need to choose a
+        Design and Development lead.
       </p>
-
-      <h4 style={{ fontSize: 20 }}>
-        Preview might not be as accurate as in Framer X.
-      </h4>
 
       <p>
-        This is a small, but unfortunate bug in Framer Web at the moment. While
-        it should work in most cases, it's important to keep this in mind.
+        <b>Design Leads</b> are responible for:
       </p>
-
-      <h4 style={{ fontSize: 20 }}>
-        Some shortcuts might not work the same as in Framer X.
-      </h4>
+      <ul>
+        <li>Creating the project and sharing it with the team</li>
+        <li>Publishing the final component to the store</li>
+        <li>Making sure everyone's opinions are included</li>
+      </ul>
 
       <p>
-        Another small bug, but shouldn't cause any major problems when working
-        in your project.
+        <b>Development Leads</b> are responible for:
       </p>
-
-      <h4 style={{ fontSize: 20 }}>
-        While multiple people can design on the canvas, the code editor is still
-        limited to one person at a time.
-      </h4>
+      <ul>
+        <li>Understanding the requirements from the designers</li>
+        <li>Coding the component</li>
+      </ul>
 
       <p>
-        We're splitting our groups up in a way where there should only be one
-        lead developer in the project at a time, but this is another thing to
-        keep in mind when creating your components. You can always start a new
-        project and code in a seperate project if you'd like to code yourself!
+        Your team has <b>one hour</b> to complete the design and code for the
+        component.
       </p>
+
+      <p>Workflow:</p>
 
       <h2>
         <motion.u
@@ -148,20 +109,30 @@ export const IndexPage = (props: any) => {
         </motion.u>
       </h2>
       <p>
-        While building components for a design system, it's important to know
-        some guidelines and rules around the things we're building.
+        We've provided some templates and guidelines for building your
+        components. See your component's page for more information on:
       </p>
-      <p>Here, you'll find information on:</p>
+
+      <ul>
+        <li>
+          <Link to={"/content/Colors"}>Color tokens</Link>
+        </li>
+        <li>Minimum requirements</li>
+        <li>Starting templates</li>
+      </ul>
+      {/* <p>Here, you'll find information on:</p>
       <ul>
         <li>Minimum requirements for components</li>
-        <li>Color and design tokens</li>
+        <li>
+          <a href={"#colorToken"}>Color and design tokens</a>
+        </li>
         <li>Code Templates</li>
       </ul>
       <p>
         In addition, you can find more information + tips about the components
         you're creating on the relevant page on the sidebar.
-      </p>
-      <h2>
+      </p> */}
+      {/* <h2>
         <motion.u
           animate={{
             borderBottom: [
@@ -202,6 +173,74 @@ export const IndexPage = (props: any) => {
       <p>
         For Interactions, see the <b>tips</b> section for your component for
         ideas.
+      </p> */}
+
+      <h2>
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #FFC6A8",
+              "3px solid #0055FF",
+              "3px solid #E7FFF7",
+              "3px solid #FFF9DA",
+              "3px solid #FF7744",
+              "3px solid #F3F2F2"
+            ]
+          }}
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
+        >
+          Important Notes
+        </motion.u>
+      </h2>
+      <p>
+        <b>Framer Web is in an early beta stage</b>, and is only available for
+        attendees of Framer X for Teams at Loupe 2019. With this in mind, there
+        are a few things you should know about the current status and usage of
+        Framer Web.
+      </p>
+
+      <ul>
+        <li>Preview might not be as accurate as in Framer X.</li>
+
+        {/* <p>
+        This is a small, but unfortunate bug in Framer Web at the moment. While
+        it should work in most cases, it's important to keep this in mind.
+      </p> */}
+
+        <li>Some shortcuts might not work the same as in Framer X.</li>
+
+        {/* <p>
+        Another small bug, but shouldn't cause any major problems when working
+        in your project.
+      </p> */}
+
+        <li>
+          While multiple people can design on the canvas, only one person can
+          code per tsx file.
+        </li>
+
+        <li>Don't share any screenshots or links outside of this workshop.</li>
+
+        {/* <p>
+        We're splitting our groups up in a way where there should only be one
+        lead developer in the project at a time, but this is another thing to
+        keep in mind when creating your components. You can always start a new
+        project and code in a seperate project if you'd like to code yourself!
+      </p> */}
+      </ul>
+
+      <p>
+        If there are any blockers for you and your team, you can always resort
+        to Framer X to finish your components.
       </p>
 
       <h2>
@@ -226,6 +265,7 @@ export const IndexPage = (props: any) => {
             ease: "linear",
             duration: 20
           }}
+          id={"colorToken"}
         >
           Color Tokens
         </motion.u>
@@ -576,61 +616,6 @@ export const IndexPage = (props: any) => {
           {"}\n"}
         </pre>
       </code>
-
-      <h2>
-        <motion.u
-          animate={{
-            borderBottom: [
-              "3px solid #FF7744",
-              "3px solid #FFF9DA",
-              "3px solid #0055FF",
-              "3px solid #E7FFF7",
-              "3px solid #F3F2F2",
-              "3px solid #FFC6A8"
-            ]
-          }}
-          style={{
-            paddingBottom: 5,
-            textDecoration: "none",
-            borderBottom: "3px solid #05f"
-          }}
-          transition={{
-            yoyo: Infinity,
-            ease: "linear",
-            duration: 20
-          }}
-        >
-          Code Templates
-        </motion.u>
-      </h2>
-
-      <p>
-        When coding your component, you can use the following template to speed
-        things up. You can also find a template on your component's
-        documentation page.
-      </p>
-
-      <code>
-        <pre style={{ padding: 10 }}>
-          import * as React from "react"{"\n"}
-          import {"{"} Frame {"}"} from "framer"{"\n"}
-          import {"{"} colors {"}"} from
-          "@framer/aroagb.loupe-colors/code/canvas"{"\n"}
-          {"\n"}
-          export function Component() {"{\n"}
-          {"    "}return &lt;Frame style={"{"}
-          {"{"}
-          {"}"}
-          {"}/"}&gt;
-          {";\n"}
-          {"}\n"}
-        </pre>
-      </code>
-
-      <p>
-        Each component is a bit different, so make sure you check out your
-        component page for more information.
-      </p>
     </>
   );
 };

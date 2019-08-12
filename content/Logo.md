@@ -9,10 +9,12 @@ A **Logo** is a component to communicate a your brand's visual identity.
 
 ### Minimum Requirements
 
-The Logo component should at least have the following:
+The Logo component will be delivered as a design component and should at least have the following:
 
-- Default state
-- Hover state
+- Dark Mode
+- Light Mode
+
+If you'd like to code, you can right click on your Graphic to copy the SVG, and use this template to get started:
 
 ### Starting Template
 
@@ -23,8 +25,14 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Logo(props) {
-  return <Frame style={{}} />;
+  return <Frame background={""}>// SVG code goes here</Frame>;
 }
+
+// Change the width and height here to fit your logo
+Logo.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips
@@ -32,6 +40,7 @@ export function Logo(props) {
 Framer has a nice [API](https://www.framer.com/api/) to help add things like animations, state, and variants. Here are some tips that might help when creating your component:
 
 - Using the [Graphics tool](https://www.framer.com/support/using-framer-x/drawing-tools/) in Framer X, you can get your svg quickly by right clicking the graphic and slecting copy > copy SVG.
+- [Graphic Tool - Framer Crash Course](https://www.youtube.com/watch?v=oALrdQHhHMI)
 - If you're getting an error, make sure your SVG is [valid JSX](https://svg2jsx.com/).
 - It could be cool to do some awesome animations while hovering the logo, don't be afraid to use your creativity!
 

@@ -6,12 +6,10 @@ tags: ["components"]
 ---
 
 A **Slider** allows a user to choose a number between a minimum and maximum value.
-It may display titles for these values, and may be "stepped", so that its value
-only changes in increments of a given number.
 
 ### Minimum Requirements
 
-The Slider component should at least have the following:
+The Slider component will be delivered as a code component and should at least have the following:
 
 - Default state
 - Draggable state
@@ -43,3 +41,8 @@ After meeting the minimum requirements for the Slider component, you might have 
 Here are some stretch goals:
 
 - Try to hook the slider up to control something on the canvas. Exploring the [api docs](https://www.framer.com/api/tutorial/) might help!
+
+For some inspiration, here are some slider examples:
+
+- [Dribbble](https://dribbble.com/search/shots/popular/animation?q=slider)
+- [Ant Design](https://ant.design/components/slider/)
