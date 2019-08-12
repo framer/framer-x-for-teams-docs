@@ -49,8 +49,8 @@ export const IndexPage = (props: any) => {
       <p>
         We'll be splitting up into smaller teams, with at least one developer
         and one designer. Our goal is to create a shared design system with
-        components built with interactions. Through this, we'll gain a deeper
-        understanding of what the collaboration aspect looks like in Framer X.
+        interactive components. Through this, we'll gain a deeper understanding
+        of what the collaboration aspect looks like in Framer X.
       </p>
 
       <h2>
@@ -628,11 +628,8 @@ export const IndexPage = (props: any) => {
       </code>
 
       <p>
-        The template is a good starting point, and includes a PropertyControl to
-        change the variant (primary, secondary) through the props. If you're not
-        too familiar with Property Controls in Framer X, you can click{" "}
-        <a href="https://www.framer.com/api/property-controls/">here</a> to get
-        a quick explanation.
+        Each component is a bit different, so make sure you check out your
+        component page for more information.
       </p>
     </>
   );
