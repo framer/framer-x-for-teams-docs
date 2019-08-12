@@ -26,6 +26,12 @@ import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 export function Button(props) {
   return <Frame style={{}} />;
 }
+
+// Change the width and height here to fit your component
+Button.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips

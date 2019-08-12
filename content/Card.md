@@ -27,6 +27,12 @@ import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 export function Card(props) {
   return <Frame style={{}} />;
 }
+
+// Change the width and height here to fit your component
+Card.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips
@@ -39,6 +45,7 @@ Framer has a nice [API](https://www.framer.com/api/) to help add things like ani
 - A card will normally have some sort of state (`open` or `closed`). Try to use Framer's [useCycle](https://www.framer.com/api#cycle) or [React.useState](https://reactjs.org/docs/hooks-state.html) to hold your component state!
 
 ```tsx
+import * as React from "react";
 import { Frame, useCycle } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 

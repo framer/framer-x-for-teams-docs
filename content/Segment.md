@@ -26,6 +26,12 @@ import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 export function Segment(props) {
   return <Frame style={{}} />;
 }
+
+// Change the width and height here to fit your component
+Segment.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips

@@ -25,6 +25,12 @@ import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 export function Slider(props) {
   return <Frame style={{}} />;
 }
+
+// Change the width and height here to fit your component
+Slider.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips

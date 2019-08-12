@@ -25,6 +25,12 @@ import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 export function Toggle(props) {
   return <Frame style={{}} />;
 }
+
+// Change the width and height here to fit your component
+Toggle.defaultProps = {
+  width: 200,
+  height: 200
+};
 ```
 
 ### Tips
@@ -36,6 +42,7 @@ Framer has a nice [API](https://www.framer.com/api/) to help add things like ani
 - An example component to toggle the background might look something like this:
 
 ```tsx
+import * as React from "react";
 import { Frame, useCycle } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
