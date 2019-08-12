@@ -3,6 +3,7 @@ import * as React from "react";
 // @ts-ignore
 import { Link, graphql } from "gatsby";
 import { Layout } from "../components/Layout";
+import { motion } from "framer-motion";
 
 export const IndexPage = (props: any) => {
   return (
@@ -20,15 +21,30 @@ export const IndexPage = (props: any) => {
       </p>
       <h2>
         {" "}
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #0055FF",
+              "3px solid #FFF9DA",
+              "3px solid #E7FFF7",
+              "3px solid #FFC6A8",
+              "3px solid #FF7744",
+              "3px solid #F3F2F2"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Overview{" "}
-        </u>
+        </motion.u>
       </h2>
       <p>
         We'll be splitting up into smaller teams, with at least one developer
@@ -38,15 +54,30 @@ export const IndexPage = (props: any) => {
       </p>
 
       <h2>
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #FFC6A8",
+              "3px solid #0055FF",
+              "3px solid #E7FFF7",
+              "3px solid #FFF9DA",
+              "3px solid #FF7744",
+              "3px solid #F3F2F2"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Important Notes
-        </u>
+        </motion.u>
       </h2>
       <p>
         It's important to remember that Framer Web is in an early beta stage,
@@ -91,15 +122,30 @@ export const IndexPage = (props: any) => {
       </p>
 
       <h2>
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #0055FF",
+              "3px solid #FFF9DA",
+              "3px solid #E7FFF7",
+              "3px solid #FFC6A8",
+              "3px solid #FF7744",
+              "3px solid #F3F2F2"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Resources
-        </u>
+        </motion.u>
       </h2>
       <p>
         While building components for a design system, it's important to know
@@ -116,15 +162,30 @@ export const IndexPage = (props: any) => {
         you're creating on the relevant page on the sidebar.
       </p>
       <h2>
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #F3F2F2",
+              "3px solid #0055FF",
+              "3px solid #E7FFF7",
+              "3px solid #FFF9DA",
+              "3px solid #FF7744",
+              "3px solid #FFC6A8"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Minimum Requirements
-        </u>
+        </motion.u>
       </h2>
       <p>
         Our end goal is to end up with a library of functional components built
@@ -144,15 +205,30 @@ export const IndexPage = (props: any) => {
       </p>
 
       <h2>
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #F3F2F2",
+              "3px solid #0055FF",
+              "3px solid #FFF9DA",
+              "3px solid #E7FFF7",
+              "3px solid #FFC6A8",
+              "3px solid #FF7744"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Color Tokens
-        </u>
+        </motion.u>
       </h2>
       <p>
         We have some already defined colors ready to be used, which you can use
@@ -446,7 +522,7 @@ export const IndexPage = (props: any) => {
         </p>
       </p>
 
-      <h3>Using Shared Colors</h3>
+      <h4 style={{ fontSize: 20 }}>Using Shared Colors</h4>
 
       <p>
         The shared colors above can be used both on the Framer Canvas, and
@@ -502,15 +578,30 @@ export const IndexPage = (props: any) => {
       </code>
 
       <h2>
-        <u
+        <motion.u
+          animate={{
+            borderBottom: [
+              "3px solid #FF7744",
+              "3px solid #FFF9DA",
+              "3px solid #0055FF",
+              "3px solid #E7FFF7",
+              "3px solid #F3F2F2",
+              "3px solid #FFC6A8"
+            ]
+          }}
           style={{
             paddingBottom: 5,
             textDecoration: "none",
             borderBottom: "3px solid #05f"
           }}
+          transition={{
+            yoyo: Infinity,
+            ease: "linear",
+            duration: 20
+          }}
         >
           Code Templates
-        </u>
+        </motion.u>
       </h2>
 
       <p>
