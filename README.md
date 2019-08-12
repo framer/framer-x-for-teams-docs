@@ -1,8 +1,6 @@
 # Loupe Design System
 
 <img src="./static/favicon/favicon.png" alt="drawing" width="100"/>
-<img src="./static/favicon/favicon.png" alt="drawing" width="100"/>
-<img src="./static/favicon/favicon.png" alt="drawing" width="100"/>
 
 Welcome to [Loupe 2019](https://framer.com/loupe), a conference on interactive design and creative coding.
 
