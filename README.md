@@ -2,7 +2,11 @@
 
 Welcome to [Loupe 2019](https://framer.com/loupe), a conference on interactive design and creative coding.
 
-Here at Framer, we're aiming to fully bridge the gap between designers and developers, through collaboration and shared design systems. Today, we'll be exploring this workflow together!
+Here at Framer, we're aiming to fully bridge the gap between designers and developers, through collaboration and shared design systems.
+
+Today, we'll be exploring new ways teams can collaborate in Framer X, while learning how to build components using Framer's API.
+
+Please view the [Official Loupe Docs](https://loupe-docs.netlify.com/) for more information about the workshop.
 
 # Overview
 
