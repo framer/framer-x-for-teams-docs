@@ -45,7 +45,7 @@ export function Toggle(props) {
     { background: colors.backgroundGeneral }
   );
 
-  return <Frame style={active} onClick={inactive} />;
+  return <Frame animate={active} onClick={inactive} />;
 }
 ```
 
