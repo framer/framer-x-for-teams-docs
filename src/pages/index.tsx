@@ -18,16 +18,36 @@ export const IndexPage = (props: any) => {
         and developers, through collaboration and shared design systems. Today,
         we'll be exploring this workflow together!
       </p>
-      <h2>Overview</h2>
+      <h2>
+        {" "}
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Overview{" "}
+        </u>
+      </h2>
       <p>
         We'll be splitting up into smaller teams, with at least one developer
         and one designer. Our goal is to create a shared design system with
-        components built ready for both Framer X and Production. Through this,
-        we'll gain a deeper understanding of what the collaboration aspect looks
-        like in Framer X.
+        components built with interactions. Through this, we'll gain a deeper
+        understanding of what the collaboration aspect looks like in Framer X.
       </p>
 
-      <h2>Important Notes</h2>
+      <h2>
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Important Notes
+        </u>
+      </h2>
       <p>
         It's important to remember that Framer Web is in an early beta stage,
         and only available for attendees of Framer X for Teams at Loupe 2019.
@@ -70,7 +90,17 @@ export const IndexPage = (props: any) => {
         project and code in a seperate project if you'd like to code yourself!
       </p>
 
-      <h2>Resources</h2>
+      <h2>
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Resources
+        </u>
+      </h2>
       <p>
         While building components for a design system, it's important to know
         some guidelines and rules around the things we're building.
@@ -85,7 +115,17 @@ export const IndexPage = (props: any) => {
         In addition, you can find more information + tips about the components
         you're creating on the relevant page on the sidebar.
       </p>
-      <h2>Minimum Requirements</h2>
+      <h2>
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Minimum Requirements
+        </u>
+      </h2>
       <p>
         Our end goal is to end up with a library of functional components built
         in code, so it's important to know some minimum requirements your
@@ -94,21 +134,26 @@ export const IndexPage = (props: any) => {
       <p>Every code component should at least have the following:</p>
 
       <ul>
-        <li>Default / Primary Variant</li>
-        <li>Secondary Variant</li>
-        <li>Interaction State (Hover / Click / Drag)</li>
+        <li>Default State</li>
+        <li>Interaction State (Hover/Drag/Click)</li>
       </ul>
 
-      <p>
-        * Some components might not require a Secondary state. See your
-        component's documentation for more information.
-      </p>
       <p>
         For Interactions, see the <b>tips</b> section for your component for
         ideas.
       </p>
 
-      <h2>Color Tokens</h2>
+      <h2>
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Color Tokens
+        </u>
+      </h2>
       <p>
         We have some already defined colors ready to be used, which you can use
         in the canvas or as variables in your code. See{" "}
@@ -443,6 +488,7 @@ export const IndexPage = (props: any) => {
 
       <code>
         <pre style={{ padding: 10 }}>
+          import * as React from "react"{"\n"}
           import {"{"} Frame {"}"} from "framer"{"\n"}
           import {"{"} colors {"}"} from
           "@framer/aroagb.loupe-colors/code/canvas"{"\n"}
@@ -455,7 +501,17 @@ export const IndexPage = (props: any) => {
         </pre>
       </code>
 
-      <h2>Code Templates</h2>
+      <h2>
+        <u
+          style={{
+            paddingBottom: 5,
+            textDecoration: "none",
+            borderBottom: "3px solid #05f"
+          }}
+        >
+          Code Templates
+        </u>
+      </h2>
 
       <p>
         When coding your component, you can use the following template to speed
@@ -463,11 +519,22 @@ export const IndexPage = (props: any) => {
         documentation page.
       </p>
 
-      <p>
-        <a href="https://gist.github.com/addisonschultz/7f8ac345145297ded8fe04e14f51c668">
-          Link to Gist
-        </a>
-      </p>
+      <code>
+        <pre style={{ padding: 10 }}>
+          import * as React from "react"{"\n"}
+          import {"{"} Frame {"}"} from "framer"{"\n"}
+          import {"{"} colors {"}"} from
+          "@framer/aroagb.loupe-colors/code/canvas"{"\n"}
+          {"\n"}
+          export function Component() {"{\n"}
+          {"    "}return &lt;Frame style={"{"}
+          {"{"}
+          {"}"}
+          {"}/"}&gt;
+          {";\n"}
+          {"}\n"}
+        </pre>
+      </code>
 
       <p>
         The template is a good starting point, and includes a PropertyControl to
