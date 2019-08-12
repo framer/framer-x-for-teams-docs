@@ -7,8 +7,6 @@ tags: ["components"]
 
 A **Card** is a structured container for content and actions about a single subject.
 
-Optionally, the card can have a set structure (title, subtitle, description, actions, media, etc.)
-
 ### Minimum Requirements
 
 The Card component will be delivered as a code component and should at least have the following:
