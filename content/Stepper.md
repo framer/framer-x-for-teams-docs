@@ -17,9 +17,9 @@ The Stepper component will be delivered as a code component and should at least 
 - Click state
 - Recommended size: 260px x 44px
 
-  For some inspiration, here are some slider examples:
+For some inspiration, here are some slider examples:
 
-  - [Dribbble](https://dribbble.com/search?q=stepper)
+- [Dribbble](https://dribbble.com/search?q=stepper)
 
 ## Code
 

@@ -5,7 +5,7 @@ title: "Hero"
 tags: ["components"]
 ---
 
-A **Hero** gives an image for your website or app
+A **Hero** gives an image for your website or app.
 
 ## Design
 

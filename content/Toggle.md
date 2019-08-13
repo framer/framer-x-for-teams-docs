@@ -17,10 +17,10 @@ The Toggle component will be delivered as a code component and should at least h
 - Off state
 - Recommended size: 260px x 44px
 
-  For some inspiration, here are some toggle examples:
+For some inspiration, here are some toggle examples:
 
-  - [Ant Design](https://ant.design/components/toggle/)
-  - [Dribbble](https://dribbble.com/tags/toggle)
+- [Ant Design](https://ant.design/components/toggle/)
+- [Dribbble](https://dribbble.com/tags/toggle)
 
 ## Code
 

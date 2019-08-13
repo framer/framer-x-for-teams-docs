@@ -17,10 +17,10 @@ The Slider component will be delivered as a code component and should at least h
 - Draggable state
 - Recommended size: 260px x 44px
 
-  For some inspiration, here are some slider examples:
+For some inspiration, here are some slider examples:
 
-  - [Dribbble](https://dribbble.com/search/shots/popular/animation?q=slider)
-  - [Ant Design](https://ant.design/components/slider/)
+- [Dribbble](https://dribbble.com/search/shots/popular/animation?q=slider)
+- [Ant Design](https://ant.design/components/slider/)
 
 ## Code
 

@@ -7,6 +7,8 @@ tags: ["components"]
 
 **Buttons** allow users to take actions, and make choices, with a single tap. It can have other interactions, such as hovers and it can contain text.
 
+## Design
+
 ### Minimum Requirements
 
 The Button component should at least have the following:
@@ -15,6 +17,8 @@ The Button component should at least have the following:
 - Hover state
 - Click state
 - Recommended size: 165px x 45px
+
+## Code
 
 ### Starting Template
 

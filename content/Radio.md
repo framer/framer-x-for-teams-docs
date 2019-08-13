@@ -18,11 +18,11 @@ The Radio component will be delivered as a code component and should at least ha
 - Add a label
 - Recommended size: 24px x 24px
 
-  For some inspiration, here are some radio examples:
+For some inspiration, here are some radio examples:
 
-  - [Ant Design](https://ant.design/components/radio/)
-  - [CSS Radio](https://freefrontend.com/css-checkboxes/)
-  - [Dribbble](https://dribbble.com/search?q=radio+button)
+- [Ant Design](https://ant.design/components/radio/)
+- [CSS Radio](https://freefrontend.com/css-checkboxes/)
+- [Dribbble](https://dribbble.com/search?q=radio+button)
 
 ## Code
 
