@@ -27,7 +27,7 @@ export function Checkbox(props) {
 }
 
 // Change the width and height here to fit your component
-Card.defaultProps = {
+Checkbox.defaultProps = {
   width: 200,
   height: 200
 };
