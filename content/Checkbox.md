@@ -7,12 +7,23 @@ tags: ["components"]
 
 A Checkbox allows a user to toggle between two values: `on` and `off`.
 
+## Design
+
 ### Minimum Requirements
 
 The Checkbox component will be delivered as a code component and should at least have the following:
 
 - Checked state
 - Unchecked state
+- Recommended size: 24px x 24px
+
+For some inspiration, here are some checkbox examples:
+
+- [Ant Design](https://ant.design/components/checkbox/)
+- [CSS Checkboxes](https://freefrontend.com/css-checkboxes/)
+- [Dribbble](https://dribbble.com/search?q=checkbox)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +34,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Checkbox(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Checkbox.defaultProps = {
-  width: 200,
-  height: 200
+  width: 24,
+  height: 24
 };
 ```
 
@@ -67,9 +78,3 @@ Here are some stretch goals:
 - Add an SVG that only displays when the box is checked. Use the built in Graphics tool!
 - Animate the SVG as it appears.
 - Add a Hover state.
-
-For some inspiration, here are some checkbox examples:
-
-- [Ant Design](https://ant.design/components/checkbox/)
-- [CSS Checkboxes](https://freefrontend.com/css-checkboxes/)
-- [Dribbble](https://dribbble.com/search?q=checkbox)

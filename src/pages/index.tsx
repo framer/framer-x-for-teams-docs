@@ -4,6 +4,8 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 import { Layout } from "../components/Layout";
 import { motion } from "framer-motion";
+// @ts-ignore
+import workflow from "../images/Workflow.png";
 
 export const IndexPage = (props: any) => {
   return (
@@ -83,6 +85,8 @@ export const IndexPage = (props: any) => {
 
       <p>Workflow:</p>
 
+      <img src={workflow} alt="Loupe Workflow" />
+
       <h2>
         <motion.u
           animate={{
@@ -156,6 +160,11 @@ export const IndexPage = (props: any) => {
       </p>
 
       <ul>
+        <li>
+          Refreshing the page will help. If something isn't working, reload and
+          try again.
+        </li>
+
         <li>Preview might not be as accurate as in Framer X.</li>
 
         <li>Some shortcuts might not work the same as in Framer X.</li>

@@ -7,12 +7,21 @@ tags: ["components"]
 
 A **Card** is a structured container for content and actions about a single subject.
 
+## Design
+
 ### Minimum Requirements
 
 The Card component will be delivered as a code component and should at least have the following:
 
-- Open state
-- Closed state
+- Closed state (Recommended size: 1000px x 150px)
+- Open state (Recommended size: 1000px x 400px)
+
+For some inspiration, here are some card examples:
+
+- [Ant Design](https://ant.design/components/card/)
+- [Dribbble](https://dribbble.com/search/shots/popular?q=cards)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +32,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Card(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Card.defaultProps = {
-  width: 200,
-  height: 200
+  width: 1000,
+  height: 150
 };
 ```
 
@@ -65,8 +74,3 @@ Here are some stretch goals:
 - Sizes: Large, Medium, Small
 - Add Media
 - Add randomized media: coming from an API.
-
-For some inspiration, here are some card examples:
-
-- [Ant Design](https://ant.design/components/card/)
-- [Dribbble](https://dribbble.com/search/shots/popular?q=cards)

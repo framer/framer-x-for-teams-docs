@@ -8,12 +8,21 @@ tags: ["components"]
 A **Segment** is a group of options, presented as buttons. Only one option may
 be selected at once.
 
+## Design
+
 ### Minimum Requirements
 
 The Segment component will be delivered as a code component and should at least have the following:
 
 - Default state
 - Click state
+- Recommended size: 260px x 44px
+
+  For some inspiration, here are some slider examples:
+
+  - [Dribbble](https://dribbble.com/search?q=segment+interaction)
+
+## Code
 
 ### Starting Template
 
@@ -24,13 +33,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Segment(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Segment.defaultProps = {
-  width: 200,
-  height: 200
+  width: 260,
+  height: 44
 };
 ```
 
@@ -49,7 +58,3 @@ Here are some stretch goals:
 
 - Add [`ControlType.Array`](https://www.framer.com/api/property-controls/#array) to add more segments from the property panel.
 - Hook the Segment up to something else on the canvas!
-
-For some inspiration, here are some slider examples:
-
-- [Dribbble](https://dribbble.com/search?q=segment+interaction)

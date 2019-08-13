@@ -7,12 +7,21 @@ tags: ["components"]
 
 A **Stepper** allows a user to choose a number between a minimum and maximum value.
 
+## Design
+
 ### Minimum Requirements
 
 The Stepper component will be delivered as a code component and should at least have the following:
 
 - Default state
 - Click state
+- Recommended size: 260px x 44px
+
+  For some inspiration, here are some slider examples:
+
+  - [Dribbble](https://dribbble.com/search?q=stepper)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +32,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Stepper(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Stepper.defaultProps = {
-  width: 200,
-  height: 200
+  width: 260,
+  height: 44
 };
 ```
 
@@ -59,7 +68,3 @@ After meeting the minimum requirements for the Stepper component, you might have
 Here are some stretch goals:
 
 - Add [`propertyControl`](https://www.framer.com/api/property-controls) to set a min and a max for the Stepper.
-
-For some inspiration, here are some slider examples:
-
-- [Dribbble](https://dribbble.com/search?q=stepper)

@@ -5,7 +5,9 @@ title: "Radio"
 tags: ["components"]
 ---
 
-A Radio allows a user to toggle between two values: `on` and `off`.
+A Radio allows a user to select a single state from multiple options. Focus on getting a single Radio to toggle between two states.
+
+## Design
 
 ### Minimum Requirements
 
@@ -13,6 +15,16 @@ The Radio component will be delivered as a code component and should at least ha
 
 - Checked state
 - Unchecked state
+- Add a label
+- Recommended size: 24px x 24px
+
+  For some inspiration, here are some radio examples:
+
+  - [Ant Design](https://ant.design/components/radio/)
+  - [CSS Radio](https://freefrontend.com/css-checkboxes/)
+  - [Dribbble](https://dribbble.com/search?q=radio+button)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +35,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Radio(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Radio.defaultProps = {
-  width: 200,
-  height: 200
+  width: 24,
+  height: 24
 };
 ```
 
@@ -67,9 +79,3 @@ Here are some stretch goals:
 - Add an SVG that only displays when the box is checked. Use the built in Graphics tool!
 - Animate the SVG as it appears.
 - Add a Hover state
-
-For some inspiration, here are some radio examples:
-
-- [Ant Design](https://ant.design/components/radio/)
-- [CSS Radio](https://freefrontend.com/css-checkboxes/)
-- [Dribbble](https://dribbble.com/search?q=radio+button)

@@ -7,12 +7,22 @@ tags: ["components"]
 
 A Toggle allows a user to toggle between two values: `on` and `off`.
 
+## Design
+
 ### Minimum Requirements
 
 The Toggle component will be delivered as a code component and should at least have the following:
 
 - On state
 - Off state
+- Recommended size: 260px x 44px
+
+  For some inspiration, here are some toggle examples:
+
+  - [Ant Design](https://ant.design/components/toggle/)
+  - [Dribbble](https://dribbble.com/tags/toggle)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +33,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Toggle(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Toggle.defaultProps = {
-  width: 200,
-  height: 200
+  width: 260,
+  height: 44
 };
 ```
 
@@ -47,12 +57,13 @@ import { Frame, useCycle } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Toggle(props) {
-  const [active, inactive] = useCycle(
-    { background: colors.primaryActive },
-    { background: colors.backgroundGeneral }
-  );
+  const [active, inactive] = useCycle({ x: 5 }, { x: 255 });
 
-  return <Frame animate={active} onClick={inactive} />;
+  return (
+    <Frame onClick={inactive}>
+      <Frame animate={active} />
+    </Frame>
+  );
 }
 ```
 
@@ -66,8 +77,3 @@ Here are some stretch goals:
 - Add some text and a propertyControl to show/hide the text.
 - Add a Hover state
 - Make the toggle control something else on the canvas!
-
-For some inspiration, here are some toggle examples:
-
-- [Ant Design](https://ant.design/components/toggle/)
-- [Dribbble](https://dribbble.com/tags/toggle)

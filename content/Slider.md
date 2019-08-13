@@ -7,12 +7,22 @@ tags: ["components"]
 
 A **Slider** allows a user to choose a number between a minimum and maximum value.
 
+## Design
+
 ### Minimum Requirements
 
 The Slider component will be delivered as a code component and should at least have the following:
 
 - Default state
 - Draggable state
+- Recommended size: 260px x 44px
+
+  For some inspiration, here are some slider examples:
+
+  - [Dribbble](https://dribbble.com/search/shots/popular/animation?q=slider)
+  - [Ant Design](https://ant.design/components/slider/)
+
+## Code
 
 ### Starting Template
 
@@ -23,13 +33,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Slider(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Slider.defaultProps = {
-  width: 200,
-  height: 200
+  width: 260,
+  height: 44
 };
 ```
 
@@ -47,8 +57,3 @@ After meeting the minimum requirements for the Slider component, you might have 
 Here are some stretch goals:
 
 - Try to hook the slider up to control something on the canvas. Exploring the [api docs](https://www.framer.com/api/tutorial/) might help!
-
-For some inspiration, here are some slider examples:
-
-- [Dribbble](https://dribbble.com/search/shots/popular/animation?q=slider)
-- [Ant Design](https://ant.design/components/slider/)

@@ -14,6 +14,7 @@ The Button component should at least have the following:
 - Default state
 - Hover state
 - Click state
+- Recommended size: 165px x 45px
 
 ### Starting Template
 
@@ -24,13 +25,13 @@ import { Frame } from "framer";
 import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
 
 export function Button(props) {
-  return <Frame style={{}} />;
+  return <Frame style={{}} center />;
 }
 
 // Change the width and height here to fit your component
 Button.defaultProps = {
-  width: 200,
-  height: 200
+  width: 165,
+  height: 45
 };
 ```
 
