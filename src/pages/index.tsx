@@ -20,7 +20,10 @@ export const IndexPage = (props: any) => {
         we'll be exploring this workflow together!
       </p>
       <h4>
-        <a href="https://beta.framer.com/projects/8PJ2w551N0bBkRQxy6Rl/">
+        <a
+          href="https://beta.framer.com/projects/8PJ2w551N0bBkRQxy6Rl/"
+          target="_blank"
+        >
           Open Framer Web
         </a>
       </h4>
