@@ -19,6 +19,12 @@ export const IndexPage = (props: any) => {
         and developers, through collaboration and shared design systems. Today,
         we'll be exploring this workflow together!
       </p>
+      <h4>
+        <a href="https://beta.framer.com/projects/8PJ2w551N0bBkRQxy6Rl/">
+          Open Framer Web
+        </a>
+      </h4>
+
       <h2>
         {" "}
         <motion.u
