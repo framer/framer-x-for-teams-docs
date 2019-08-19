@@ -181,15 +181,6 @@ export const IndexPage = (props: any) => {
         If there are any blockers for you and your team, you can always resort
         to Framer X to finish your components.
       </p>
-
-      <h4>
-        <a
-          href="https://beta.framer.com/projects/8PJ2w551N0bBkRQxy6Rl/"
-          target="_blank"
-        >
-          Open Framer Web
-        </a>
-      </h4>
     </>
   );
 };
