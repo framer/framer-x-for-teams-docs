@@ -78,7 +78,7 @@ export const Logo = () => {
         fill="transparent"
         stroke="url(#linear)"
         strokeWidth="4"
-        clip-path="url(#b)"
+        clipPath="url(#b)"
         xlinkHref="#a"
       />
       <motion.path
