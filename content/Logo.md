@@ -34,7 +34,7 @@ If you'd like to code, you can right click on your Graphic to copy the SVG, and 
 import * as React from "react";
 import { Frame } from "framer";
 //@ts-ignore
-import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
 
 export function Logo(props) {
   return (

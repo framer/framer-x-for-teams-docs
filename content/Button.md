@@ -26,7 +26,7 @@ The Button component should at least have the following:
 import * as React from "react";
 import { Frame } from "framer";
 //@ts-ignore
-import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
 
 export function Button(props) {
   return <Frame style={{}} center />;

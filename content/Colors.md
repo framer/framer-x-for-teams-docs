@@ -5,7 +5,7 @@ title: "Colors"
 tags: ["components"]
 ---
 
-The [Loupe Colors](https://store.framer.com/package/aroagb/loupe-colors) package includes a set of Shared Colors.
+The [Loupe Colors](https://store.framer.com/package/tishogeorgiev/framer-x-for-teams-colors) package includes a set of Shared Colors.
 
 <h4>Primary Colors</h4>
 
@@ -307,7 +307,7 @@ importing them as shown below.
 // Code Component
 import * as React from "react";
 import { Frame } from "framer";
-import { colors } from "@framer/aroagb.loupe-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
 
 export function Component() {
   return <Frame background={colors.backgroundPrimary} />;
@@ -317,7 +317,7 @@ export function Component() {
 ```tsx
 // Overrides
 import { Override } from "framer"
-import { colors } from '@framer/aroagb.loupe-colors/code/canvas'
+import { colors } from '@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas'
 
 export function ColorExample: Override {
   return {

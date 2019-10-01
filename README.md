@@ -101,7 +101,7 @@ Watch a quick 5 min video here or check out the [documentation](https://www.fram
 ```
 import  { Override }  from  "framer"
 
-import  { colors }  from  "@framer/aroagb.loupe-colors/code/canvas"
+import  { colors }  from  "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas"
 
 export  function  Primary():  Override  {
     return  {
@@ -115,7 +115,7 @@ export  function  Primary():  Override  {
 ```
 import  { Frame }  from  "framer"
 
-import  { colors }  from  "@framer/aroagb.loupe-colors/code/canvas"
+import  { colors }  from  "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas"
 
 export function Component() {
     return <Frame background={colors.backgroundPrimary}/>
