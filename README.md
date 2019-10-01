@@ -6,7 +6,7 @@ Here at Framer, we're aiming to fully bridge the gap between designers and devel
 
 Today, we'll be exploring new ways teams can collaborate in Framer X, while learning how to build components using Framer's API.
 
-Please view the [Official Docs](https://loupe-docs.netlify.com/) for more information about the workshop.
+Please view the [Official Docs](https://framerx-for-teams-workshop.netlify.com/) for more information about the workshop.
 
 # Overview
 

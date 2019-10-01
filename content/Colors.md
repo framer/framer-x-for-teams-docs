@@ -5,7 +5,7 @@ title: "Colors"
 tags: ["components"]
 ---
 
-The [Loupe Colors](https://store.framer.com/package/tishogeorgiev/framer-x-for-teams-colors) package includes a set of Shared Colors.
+The [Framer Workshop Colors](https://store.framer.com/package/tishogeorgiev/framer-x-for-teams-colors) package includes a set of Shared Colors.
 
 <h4>Primary Colors</h4>
 
@@ -296,7 +296,7 @@ different sections.
 ## Canvas
 
 On the Framer X canvas, you can select from these colors in the color selector
-under the Shared Colors dropdown (Under Loupe Colors).
+under the Shared Colors dropdown (Under Framer Workshop Colors).
 
 ## Code
 
