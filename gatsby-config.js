@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Loupe 2019 Docs",
+    title: "Framer X for Teams",
     author: "Addison Schultz <addison@framer.com>",
-    description: "Docs for the Loupe 2019 Framer X for Teams Workshop",
+    description: "Docs for the Framer X for Teams Workshop",
     siteUrl: "https://framer-learn-docs.netlify.com"
   },
   plugins: [
@@ -163,8 +163,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Loupe 2019 Docs",
-        short_name: "Loupe Docs",
+        name: "Framer X for Teams Docs",
+        short_name: "Framer X for Teams Docs",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",

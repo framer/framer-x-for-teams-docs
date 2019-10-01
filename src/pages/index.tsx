@@ -10,12 +10,7 @@ import workflow from "../images/Workflow.png";
 export const IndexPage = (props: any) => {
   return (
     <>
-      <h1 style={{ marginBottom: 10 }}>Loupe 2019</h1>
-      <h2 style={{ marginBottom: 60 }}>Framer X for Teams</h2>
-      <p>
-        Welcome to <a href="https://www.framer.com/loupe/">Loupe 2019</a>, a
-        conference on interactive design and creative coding.
-      </p>
+      <h1 style={{ marginBottom: 10 }}>Framer X for Teams</h1>
       <p>
         Here at Framer, we're aiming to fully bridge the gap between designers
         and developers, through collaboration and shared design systems. Today,
@@ -85,7 +80,7 @@ export const IndexPage = (props: any) => {
 
       <p>Workflow:</p>
 
-      <img src={workflow} alt="Loupe Workflow" />
+      <img src={workflow} alt="Workflow" />
 
       <h2>
         <motion.u
@@ -154,9 +149,8 @@ export const IndexPage = (props: any) => {
       </h2>
       <p>
         <b>Framer Web is in an early beta stage</b>, and is only available for
-        attendees of Framer X for Teams at Loupe 2019. With this in mind, there
-        are a few things you should know about the current status and usage of
-        Framer Web.
+        attendees of this workshop. With this in mind, there are a few things
+        you should know about the current status and usage of Framer Web.
       </p>
 
       <ul>

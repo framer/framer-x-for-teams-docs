@@ -1,6 +1,6 @@
 {
   "name": "loupe-docs",
-  "description": "Docs for the Loupe 2019 Framer X for teams workshop",
+  "description": "Docs for the Framer X for Teams workshop",
   "version": "1.0.0",
   "author": "Addison Schultz <addison@framer.com>",
   "dependencies": {
