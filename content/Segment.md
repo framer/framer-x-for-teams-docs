@@ -30,7 +30,7 @@ For some inspiration, here are some slider examples:
 import * as React from "react";
 import { Frame } from "framer";
 //@ts-ignore
-import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-workshop-colors/code/canvas";
 
 export function Segment(props) {
   return <Frame style={{}} center />;

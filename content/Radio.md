@@ -32,7 +32,7 @@ For some inspiration, here are some radio examples:
 import * as React from "react";
 import { Frame } from "framer";
 //@ts-ignore
-import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-workshop-colors/code/canvas";
 
 export function Radio(props) {
   return <Frame style={{}} center />;
@@ -56,7 +56,7 @@ Framer has a nice [API](https://www.framer.com/api/) to help add things like ani
 ```tsx
 import * as React from "react";
 import { Frame, useCycle } from "framer";
-import { colors } from "@framer/tishogeorgiev.framer-x-for-teams-colors/code/canvas";
+import { colors } from "@framer/tishogeorgiev.framer-workshop-colors/code/canvas";
 
 export function Radio(props) {
   const [active, inactive] = useCycle(
