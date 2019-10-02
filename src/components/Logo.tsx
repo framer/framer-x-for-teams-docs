@@ -82,12 +82,12 @@ export const Logo = () => {
         xlinkHref="#a"
       />
       <motion.path
-        animate={{ rotate: 360 }}
+        animate={{ rotate: 0 }}
         transition={{
           ease: "easeInOut",
           flip: Infinity,
           repeatDelay: 30,
-          duration: 2
+          duration: 0
         }}
         d="M 31.579 15.263 L 31.579 21.842 L 25 21.842 L 18.421 15.263 Z M 18.421 21.842 L 25 21.842 L 31.579 28.421 L 25 28.421 L 25 35 L 18.421 28.421 Z"
       />
